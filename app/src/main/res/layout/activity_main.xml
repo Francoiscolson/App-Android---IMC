@@ -1,0 +1,64 @@
+<LinearLayout
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Votre taille : "
+      android:textSize="18dp"/>
+  <EditText
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:id="@+id/taille"
+      android:gravity="center"
+      android:inputType="numberDecimal"/>
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/group">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mètre"
+            android:gravity="center"
+            android:id="@+id/metre"
+            android:checked="true"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Centimètres"
+            android:id="@+id/centi"/>
+
+    </RadioGroup>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Votre Poids : "
+        android:textSize="18dp"/>
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/poids"
+        android:gravity="center"
+        android:inputType="numberDecimal"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CALCULER VOTRE IMC"
+        android:id="@+id/envoie2"
+        android:onClick="Click"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Resulat est : "
+        android:id="@+id/result"/>
+
+
+</LinearLayout>
